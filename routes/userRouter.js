@@ -9,8 +9,8 @@ router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true }));
 
 // ROUTES
+router.get("/",(req, res) => res.send("heloo from seminar hall backend"))
 router.post("/login", userController.loginPost)
 router.post("/signup",userController.signupPost)
-
 
 module.exports = router

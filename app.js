@@ -12,7 +12,7 @@ const app = express();
 mongoDB();
 
 // MIDDLEWARE
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: "https://seminar-hall-booking-react-frontend.vercel.app", credentials: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
